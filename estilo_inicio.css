@@ -1,0 +1,137 @@
+* {
+  margin: 0px;
+}
+
+header {
+  background: #93b5c6;
+}
+#logo {
+  padding-left: 60px;
+  padding-top: 0;
+}
+.encabezado {
+  font-family: "Montserrat", sans-serif;
+}
+ul {
+  padding: 0px;
+  width: 100%; /*se cambio el ancho para que el munu ocupara toda la pagina*/
+}
+li {
+  display: inline; /* permite que el menu este en horizontal*/
+  /*margin:10px 10px 10px  10px;*/
+}
+a {
+  /*outline: none; */
+  text-decoration: none;
+  display: inline-block;
+  width: 140px;
+  /*margin-right: 0.625%;*/
+  color: black;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+li: last-child a {
+  margin-right: 0px;
+}
+
+a:hover {
+  /*cambiar color cuando pasa el cursor */
+  color: white;
+}
+img: hover {
+  color: white;
+}
+
+a:active {
+  background: #c9ccd5; /*cuando se hace click encima del enlace*/
+  color: white;
+}
+
+.im1 {
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+
+form {
+  border-radius: 30px;
+  width: 450px;
+  padding: 40px;
+  background: url("imagenes/fondoform.png");
+}
+
+input {
+  border-radius: 10px;
+}
+textarea {
+  border-radius: 15px;
+}
+
+.botones {
+  background-color: dimgrey;
+}
+.footer {
+  width: 100%;
+  height: 40px;
+  background-color: #ffe3e3;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.container-chat {
+  position: fixed;
+  width: 70%;
+  top: 78vh;
+  left: 90vw;
+}
+.chat-icon{
+  width: 3rem;
+  padding: 1rem;
+  background-color:#93b5c6; 
+  border-radius: 8px;
+  cursor: pointer;
+}
+.chat{
+  display: none;
+  flex-direction: column;
+  width: 10vw;
+  background-color: #93b5c6;
+  padding: 1rem;
+  border-radius: 10px;
+  position: fixed;
+  top: 70vh;
+  left: 90vw;
+  z-index: 3;
+  transform: translate(-50%, -50%);
+  min-height: 20rem;
+}
+.chat-input{
+  height: 25vh;
+}
+.close-chat{
+  position: absolute;
+  left:90%;
+  top: 0;
+  cursor: pointer;
+}
+.chat-btn{
+  border-radius: 8px;
+  background-color: lightgray;
+  height: 5.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.asesor-input{
+ width: 8.5rem; 
+}
+.asesor-chat{
+ display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.asesor-chat h3{
+  flex: 1;
+  height: 20vh;
+}
